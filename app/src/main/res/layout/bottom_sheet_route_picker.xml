@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textview.MaterialTextView
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="?android:attr/textColorPrimary"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/route_picker_title"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/route_picker_recycler"
+        android:paddingBottom="16dp"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:layoutAnimation="@anim/layout_anim_route_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:nestedScrollingEnabled="true"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" app:iconSpaceReserved="false">
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="路线">
+        <Preference
+            android:key="pref_route_manage"
+            app:iconSpaceReserved="false"
+            app:summary="查看、导入与删除已保存的路线"
+            app:title="路线管理"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="关于与版权">
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="setting_license"
+            app:summary="GPL-3.0-only © ZCShou"
+            app:title="版权声明"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="setting_original_author_url"
+            app:summary="https://github.com/ZCShou/GoGoGo"
+            app:title="原作者项目地址">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ZCShou/GoGoGo"/>
+        </Preference>
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="setting_modifier"
+            app:summary="Evan Chen"
+            app:title="修改者"/>
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="setting_modifier_url"
+            app:summary="https://github.com/mdq663/YuePaoHuGong"
+            app:title="修改者项目地址">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/mdq663/YuePaoHuGong"/>
+        </Preference>
+        <Preference
+            app:defaultValue="@string/app_author"
+            app:iconSpaceReserved="false"
+            app:key="setting_author"
+            app:summary="@string/app_author"
+            app:title="@string/setting_author"/>
+    </PreferenceCategory>
+</PreferenceScreen>
